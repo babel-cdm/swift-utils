@@ -461,7 +461,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E3C47E56A596F98EFA966FE /* Pods-SwiftUtils.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 89U47MB8F2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -477,6 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.babel.cdm.utils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -488,7 +490,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CCE2D778B936420C36F82FF9 /* Pods-SwiftUtils.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 89U47MB8F2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -504,6 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.babel.cdm.utils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;

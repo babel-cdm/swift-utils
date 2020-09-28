@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7157813CF37E6C520BE4791E /* Pods_SwiftUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D53657EF717C9EE851C4C4D /* Pods_SwiftUtils.framework */; };
+		B89391042521D73D00391B04 /* SUNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89391032521D73D00391B04 /* SUNetworkManager.swift */; };
 		FD68DF2B251DEABE00DAE1FE /* SwiftUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD68DF21251DEABE00DAE1FE /* SwiftUtils.framework */; };
 		FD68DF30251DEABE00DAE1FE /* SwiftUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68DF2F251DEABE00DAE1FE /* SwiftUtilsTests.swift */; };
 		FD68DF32251DEABE00DAE1FE /* SwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FD68DF24251DEABE00DAE1FE /* SwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,9 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6E3C47E56A596F98EFA966FE /* Pods-SwiftUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUtils.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-SwiftUtils/Pods-SwiftUtils.debug.xcconfig"; sourceTree = "<group>"; };
+		6E3C47E56A596F98EFA966FE /* Pods-SwiftUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUtils.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-SwiftUtils/Pods-SwiftUtils.debug.xcconfig"; sourceTree = "<group>"; };
 		8D53657EF717C9EE851C4C4D /* Pods_SwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCE2D778B936420C36F82FF9 /* Pods-SwiftUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUtils.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-SwiftUtils/Pods-SwiftUtils.release.xcconfig"; sourceTree = "<group>"; };
+		B89391032521D73D00391B04 /* SUNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUNetworkManager.swift; sourceTree = "<group>"; };
+		CCE2D778B936420C36F82FF9 /* Pods-SwiftUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUtils.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-SwiftUtils/Pods-SwiftUtils.release.xcconfig"; sourceTree = "<group>"; };
 		FD68DF21251DEABE00DAE1FE /* SwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD68DF24251DEABE00DAE1FE /* SwiftUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUtils.h; sourceTree = "<group>"; };
 		FD68DF25251DEABE00DAE1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				FD68DF42251DEBD200DAE1FE /* SUCameraManager.swift */,
 				FD68DF43251DEBD200DAE1FE /* SUMapManager.swift */,
 				FD68DF44251DEBD200DAE1FE /* SUGalleryManager.swift */,
+				B89391032521D73D00391B04 /* SUNetworkManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				FD68DF4D251DEBD200DAE1FE /* SUCameraManager.swift in Sources */,
 				FD68DF50251DEBD200DAE1FE /* SUFuntions.swift in Sources */,
 				FD68DF52251DEBD200DAE1FE /* SUExtensions.swift in Sources */,
+				B89391042521D73D00391B04 /* SUNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

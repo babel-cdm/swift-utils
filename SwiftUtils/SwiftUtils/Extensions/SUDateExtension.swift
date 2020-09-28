@@ -71,6 +71,7 @@ extension Date {
         public static let serviceISOtimeShort = "yyyy-MM-dd'T'HH:mm"
         public static let serviceReverseDateTime = "dd-MM-yyyy'T'HH:mm:ss"
         public static let serviceDateAndTime = "yyyy-MM-ddHH:mm"
+        public static let serviceDateAndTimeSpain = "MM/dd/yyyy HH:mm:ss"
     }
 
     // MARK: - Public vars
@@ -185,7 +186,7 @@ extension Date {
         return Formatter.serviceISOtimeShort.dateFormatter.string(from: self)
     }
 
-    // String formatted *dd-MM-yyyy'T'HH:mm:ss*
+    /// String formatted *dd-MM-yyyy'T'HH:mm:ss*
     public var serviceReverseDateTime: String {
         return Formatter.serviceReverseDateTime.dateFormatter.string(from: self)
     }
@@ -193,6 +194,11 @@ extension Date {
     /// String formatted *yyyy-MM-ddHH:mm*
     public var serviceDateAndTimeFormat: String {
         return Formatter.serviceDateAndTime.dateFormatter.string(from: self)
+    }
+
+    /// String formatted *MM/dd/yyyy HH:mm:ss*
+    public var serviceDateAndTimeSpainFormat: String {
+        return Formatter.serviceDateAndTimeSpain.dateFormatter.string(from: self)
     }
 
     // MARK: - Public methods

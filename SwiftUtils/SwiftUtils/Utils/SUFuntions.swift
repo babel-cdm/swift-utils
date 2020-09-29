@@ -101,10 +101,22 @@ public class SUFunctions {
 
     // MARK: - Device
 
+    /// This function returns systemVersion
+    public static func getOSVersion() -> String {
+        return UIDevice.current.systemVersion as String
+    }
+
+    /// This function returns device identifier
+    public static func getDeviceIdentifier() -> String {
+        return UIDevice.current.identifierForVendor?.uuidString ?? ""
+    }
+
+    /// This function returns true if the device is an iPad
     public static func isIpad() -> Bool {
         return UIDevice.current.userInterfaceIdiom == .pad
     }
 
+    /// This function returns the free space at device
     public static func getFreeSpaceInfo() -> (String, Int64) {
         var remainingSpaceString = NSLocalizedString("Unknown", comment: "The remaining free disk space on this device is unknown.")
         var remainingSpaceInt: Int64 = 0

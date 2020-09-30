@@ -72,6 +72,7 @@ extension Date {
         public static let serviceReverseDateTime = "dd-MM-yyyy'T'HH:mm:ss"
         public static let serviceDateAndTime = "yyyy-MM-ddHH:mm"
         public static let serviceDateAndTimeSpain = "MM/dd/yyyy HH:mm:ss"
+        public static let serviceDateSpaceTime = "yyyy-MM-dd HH:mm:ss.SSS"
     }
 
     // MARK: - Public vars
@@ -199,6 +200,11 @@ extension Date {
     /// String formatted *MM/dd/yyyy HH:mm:ss*
     public var serviceDateAndTimeSpainFormat: String {
         return Formatter.serviceDateAndTimeSpain.dateFormatter.string(from: self)
+    }
+
+    /// String formatted *yyyy-MM-dd HH:mm:ss.SSS*
+    public var serviceDateSpaceTime: String {
+        return Formatter.serviceDateSpaceTime.dateFormatter.string(from: self)
     }
 
     // MARK: - Public methods

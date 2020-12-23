@@ -184,7 +184,6 @@ public class SUFunctions {
         if isTransparent {
             navigationController.navigationBar.isTranslucent = true
         }
-        navigationController.interactivePopGestureRecognizer?.isEnabled = false
 
     }
 
@@ -226,50 +225,5 @@ public class SUFunctions {
     public static func backgroundWindow<T>(type: T.Type) -> UIWindow? {
         return UIApplication.shared.keyWindow
     }
-
-    // MARK: - Location
-
-    public static func getAddressFromCoordinates(lat: Double, withLongitude lon: Double,
-                                                 completion: @escaping (String?, Error?) -> Void) {
-
-        var center: CLLocationCoordinate2D = CLLocationCoordinate2D()
-        let geocoder: CLGeocoder = CLGeocoder()
-        center.latitude = lat
-        center.longitude = lon
-
-        let loc: CLLocation = CLLocation(latitude: center.latitude, longitude: center.longitude)
-
-        geocoder.reverseGeocodeLocation(loc, completionHandler: { (placemarks, error) in
-
-            if let error = error {
-                completion(nil, error)
-                return
-            }
-
-            let addressSeparator = ", "
-
-            if let placemarks = placemarks, let placemark = placemarks.first {
-                var addressString: String = ""
-                if let thoroughfare = placemark.thoroughfare { addressString += thoroughfare + addressSeparator }
-                if let sublocality = placemark.subLocality { addressString += sublocality + addressSeparator }
-                if let subThoroughfare = placemark.subThoroughfare { addressString += subThoroughfare + addressSeparator }
-                if let locality = placemark.locality { addressString += locality + addressSeparator }
-                if let postalCode = placemark.postalCode { addressString += postalCode + addressSeparator }
-                if let country = placemark.country { addressString += country }
-                completion(addressString, nil)
-            }
-        })
-    }
-
-    public static func getCoordinatesFromAddress(address: String, completion: @escaping (Double, Double) -> Void) {
-
-        let geoCoder = CLGeocoder()
-        geoCoder.geocodeAddressString(address) { (placemarks, _) in
-            guard let placemarks = placemarks, let location = placemarks.first?.location else {
-                completion(0.0, 0.0)
-                return
-            }
-            completion(location.coordinate.latitude, location.coordinate.longitude)
-        }
-    }
+    
 }

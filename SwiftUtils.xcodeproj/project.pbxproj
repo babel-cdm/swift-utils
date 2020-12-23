@@ -12,7 +12,6 @@
 		FD68DF30251DEABE00DAE1FE /* SwiftUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68DF2F251DEABE00DAE1FE /* SwiftUtilsTests.swift */; };
 		FD68DF32251DEABE00DAE1FE /* SwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FD68DF24251DEABE00DAE1FE /* SwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD68DF4D251DEBD200DAE1FE /* SUCameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68DF42251DEBD200DAE1FE /* SUCameraManager.swift */; };
-		FD68DF4E251DEBD200DAE1FE /* SUMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68DF43251DEBD200DAE1FE /* SUMapManager.swift */; };
 		FD68DF4F251DEBD200DAE1FE /* SUGalleryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68DF44251DEBD200DAE1FE /* SUGalleryManager.swift */; };
 		FD68DF50251DEBD200DAE1FE /* SUFuntions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68DF46251DEBD200DAE1FE /* SUFuntions.swift */; };
 		FD68DF51251DEBD200DAE1FE /* SUValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68DF47251DEBD200DAE1FE /* SUValidation.swift */; };
@@ -40,7 +39,6 @@
 		FD68DF2F251DEABE00DAE1FE /* SwiftUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUtilsTests.swift; sourceTree = "<group>"; };
 		FD68DF31251DEABE00DAE1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD68DF42251DEBD200DAE1FE /* SUCameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUCameraManager.swift; sourceTree = "<group>"; };
-		FD68DF43251DEBD200DAE1FE /* SUMapManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUMapManager.swift; sourceTree = "<group>"; };
 		FD68DF44251DEBD200DAE1FE /* SUGalleryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUGalleryManager.swift; sourceTree = "<group>"; };
 		FD68DF46251DEBD200DAE1FE /* SUFuntions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUFuntions.swift; sourceTree = "<group>"; };
 		FD68DF47251DEBD200DAE1FE /* SUValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUValidation.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				FD68DF42251DEBD200DAE1FE /* SUCameraManager.swift */,
-				FD68DF43251DEBD200DAE1FE /* SUMapManager.swift */,
 				FD68DF44251DEBD200DAE1FE /* SUGalleryManager.swift */,
 				B89391032521D73D00391B04 /* SUNetworkManager.swift */,
 			);
@@ -255,7 +252,6 @@
 			files = (
 				FD68DF51251DEBD200DAE1FE /* SUValidation.swift in Sources */,
 				FD68DF4F251DEBD200DAE1FE /* SUGalleryManager.swift in Sources */,
-				FD68DF4E251DEBD200DAE1FE /* SUMapManager.swift in Sources */,
 				FD68DF54251DEBD200DAE1FE /* SUConstants.swift in Sources */,
 				FD68DF53251DEBD200DAE1FE /* SUDateExtension.swift in Sources */,
 				FD68DF4D251DEBD200DAE1FE /* SUCameraManager.swift in Sources */,
